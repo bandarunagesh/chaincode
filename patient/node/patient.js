@@ -97,9 +97,9 @@ let Chaincode = class {
 
     // ==== Check if marble already exists ====
     let userState = await stub.getState(userid);
-    if (userState.toString()) {
-      throw new Error('This user already exists: ' + userid);
-    }
+    //if (userState.toString()) {
+    //  throw new Error('This user already exists: ' + userid);
+    //}
 
     // ==== Create marble object and marshal to JSON ====
     let patient = {};
